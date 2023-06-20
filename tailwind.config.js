@@ -4,8 +4,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
 	content: [
 		"./app/**/*.{js,ts,jsx,tsx}",
-		"./mdx-components.tsx",
-		"content/**/*.mdx",
 	],
 
 	theme: {
@@ -39,8 +37,6 @@ module.exports = {
 			animation: {
 				"fade-in": "fade-in 3s ease-in-out forwards",
 				title: "title 3s ease-out forwards",
-				"fade-left": "fade-left 3s ease-in-out forwards",
-				"fade-right": "fade-right 3s ease-in-out forwards",
 			},
 			keyframes: {
 				"fade-in": {
@@ -52,34 +48,6 @@ module.exports = {
 					},
 					"100%": {
 						opacity: "100%",
-					},
-				},
-				"fade-left": {
-					"0%": {
-						transform: "translateX(100%)",
-						opacity: "0%",
-					},
-
-					"30%": {
-						transform: "translateX(0%)",
-						opacity: "100%",
-					},
-					"100%": {
-						opacity: "0%",
-					},
-				},
-				"fade-right": {
-					"0%": {
-						transform: "translateX(-100%)",
-						opacity: "0%",
-					},
-
-					"30%": {
-						transform: "translateX(0%)",
-						opacity: "100%",
-					},
-					"100%": {
-						opacity: "0%",
 					},
 				},
 				title: {

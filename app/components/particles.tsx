@@ -13,7 +13,7 @@ interface ParticlesProps {
 
 export default function Particles({
 	className = "",
-	quantity = 30,
+	quantity = 100,
 	staticity = 50,
 	ease = 50,
 	refresh = false,
@@ -40,9 +40,9 @@ export default function Particles({
 		};
 	}, []);
 
-	useEffect(() => {
-		onMouseMove();
-	}, [mousePosition.x, mousePosition.y]);
+	// useEffect(() => {
+	// 	onMouseMove();
+	// }, [mousePosition.x, mousePosition.y]);
 
 	useEffect(() => {
 		initCanvas();
