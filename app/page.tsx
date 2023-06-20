@@ -15,18 +15,20 @@ export default function Home() {
       </h1>
       <div className="my-8 text-center animate-fade-in">
         <h2 className="text-base font-medium text-transparent bg-gradient-to-r from-indigo-700 via-indigo-200/80 to-white/40 bg-clip-text">
-          Beautiful components for your next React project
+          Beautiful Tailwind components for your next project
           <br />
           in one library, prompted by humans and designed by AI
         </h2>
       </div>
       <div className="my-8 text-center animate-fade-in">
         <Link
-          href="#"
-          className="bg-gradient-to-br from-red-900 via-indigo-700 to-zinc-900 text-white text-lg font-bold py-3 px-6 rounded-lg w-[200px] block mx-auto"
+          href="https://buy.stripe.com/5kA7uKfiU1I26BO5kK"
+          className="bg-gradient-to-br from-red-900 via-indigo-700 to-zinc-900 text-white text-lg font-bold py-3 px-6 rounded-lg min-w-content block mx-auto"
+          target="_blank"
         >
-          Pre-order
+          Pre-order for $29 <span className="line-through text-white/70">$49</span>
         </Link>
+        <p className="text-white/70 mt-2 text-sm">Lifetime access</p>
       </div>
     </div>
   );
