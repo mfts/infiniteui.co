@@ -22,11 +22,12 @@ export default function Home() {
       </div>
       <div className="my-8 text-center animate-fade-in">
         <Link
-          href="https://buy.stripe.com/5kA7uKfiU1I26BO5kK"
+          href="https://buy.stripe.com/eVa3eu3Ac72mgcoeVl"
           className="bg-gradient-to-br from-red-900 via-indigo-700 to-zinc-900 text-white text-lg font-bold py-3 px-6 rounded-lg min-w-content block mx-auto"
           target="_blank"
         >
-          Pre-order for $29 <span className="line-through text-white/70">$49</span>
+          Pre-order for $29{" "}
+          <span className="line-through text-white/70">$49</span>
         </Link>
         <p className="text-white/70 mt-2 text-sm">Lifetime access</p>
       </div>
