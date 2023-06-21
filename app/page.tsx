@@ -1,9 +1,19 @@
-import Link from "next/link";
+"use client";
+
 import React from "react";
 import Particles from "./components/particles";
+import va from "@vercel/analytics";
 
 
 export default function Home() {
+
+  const handleClick = () => {
+    va.track("Button clicked");
+    window.open("https://buy.stripe.com/eVa3eu3Ac72mgcoeVl","_blank");
+  };
+
+
+
 	return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <Particles
@@ -21,14 +31,13 @@ export default function Home() {
         </h2>
       </div>
       <div className="my-8 text-center animate-fade-in">
-        <Link
-          href="https://buy.stripe.com/eVa3eu3Ac72mgcoeVl"
+        <button
           className="bg-gradient-to-br from-red-900 via-indigo-700 to-zinc-900 text-white text-lg font-bold py-3 px-6 rounded-lg min-w-content block mx-auto"
-          target="_blank"
+          onClick={handleClick}
         >
           Pre-order for $29{" "}
           <span className="line-through text-white/70">$49</span>
-        </Link>
+        </button>
         <p className="text-white/70 mt-2 text-sm">Lifetime access</p>
       </div>
     </div>
